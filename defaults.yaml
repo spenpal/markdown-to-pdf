@@ -1,0 +1,22 @@
+# Pandoc Defaults for Markdown to PDF
+pdf-engine: tectonic
+template: eisvogel
+toc: true
+toc-depth: 2
+number-sections: true
+highlight-style: tango
+listings: false
+
+# LaTeX Variables (all PDF/typography/layout customizations)
+variables:
+  geometry: "a4paper,margin=2cm"
+  fontsize: 12pt
+  mainfont: "DejaVu Serif"
+  sansfont: "DejaVu Sans"
+  monofont: "DejaVu Sans Mono"
+  code-block-font-size: \small
+  colorlinks: true
+  linkcolor: blue
+  urlcolor: NavyBlue
+  citecolor: green
+  lang: en-US
