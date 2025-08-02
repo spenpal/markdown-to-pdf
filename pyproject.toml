@@ -1,0 +1,9 @@
+[project]
+name = "markdown-to-pdf"
+version = "0.1.0"
+description = "An opinionated, zero-configuration Docker container for converting Markdown to beautiful PDFs using Pandoc."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "streamlit>=1.47.1",
+]

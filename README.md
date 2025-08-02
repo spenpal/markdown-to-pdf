@@ -19,15 +19,25 @@ An opinionated, zero-configuration Docker container for converting Markdown to b
 
 ## Quick Start
 
-### 1. Build the container
+### Option 1: Streamlit Web UI (Recommended)
 
 ```bash
 git clone https://github.com/spenpal/markdown-to-pdf.git
 cd markdown-to-pdf
+uv run streamlit run main.py
+```
+
+Open your browser to `http://localhost:8501` and upload your markdown files through the beautiful web interface!
+
+### Option 2: Command Line
+
+#### 1. Build the container
+
+```bash
 docker build -t md2pdf .
 ```
 
-### 2. Convert your markdown
+#### 2. Convert your markdown
 
 ```bash
 docker run --rm -v $(pwd):/data md2pdf document.md
